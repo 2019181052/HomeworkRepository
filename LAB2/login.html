@@ -5,26 +5,32 @@
         <link rel = “stylesheet” type="text/css" href = “main.css”>
     </head>
     <body>
-        <div>
+        <div class="header">
             <h1>Welcome to INTERNET PROGRAMMING SHOP</h1>
-            <h3>로그인</h3>
-            <a href='signup.html'>회원가입</a>
         </div>
-        <div>
-            <h3>회원 정보 (필수)</h3>
-            <form>
+        <div class="navigation">
+            <div style="float: left; margin-right: 8pt; background-color: black; color: white;">
+                <h3>로그인</h3>
+            </div>
+            <div style="float: left">
+                <a href='signup.html' style="text-decoration : none; color: black;"><h3>회원가입</h3></a>
+            </div>
+        </div>
+        <div class="info_box" style="clear:both">
+            <h3>회원정보 (필수)</h3>
+            <form method = "get" action="">
                 <p>
-                    <label>유저 아이디 : <input type="text" name="userid" placeholder="아이디를 입력하세요" autofocus></label>
+                    <label>유저 아이디 : <input type="text" name="userid" placeholder="아이디를 입력하세요" autofocus required autocomplete="on"></label>
                 </p>
                 <p>
-                    <label>비밀번호 : <input type="password" name="password" maxlength="10" placeholder="비밀번호를 입력하세요"></label>
+                    <label>비밀번호 : <input type="password" name="password" maxlength="10" placeholder="비밀번호를 입력하세요" required></label>
                 </p>
                 <p>
-                    <label>비밀번호 확인 : <input type="password" name="password" maxlength="10" placeholder="비밀번호 확인"></label>
+                    <label>비밀번호 확인 : <input type="password" name="password" maxlength="10" placeholder="비밀번호 확인" required></label>
                 </p>
                 <p>
-                    <input type="submit", value="로그인">
-                    <button onclick="">회원가입</button>
+                    <input class = yes_button type="submit", value="로그인">
+                    <input class = no_button type="reset", value="취소">
                 </p>
             </form>
         </div>

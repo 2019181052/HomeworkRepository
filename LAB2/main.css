@@ -1,3 +1,43 @@
-body {
-    background-color: aqua;
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-bottom: 3pt;
+    border-color: gray;
 }
+
+.header h1 {
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation {
+    margin-bottom: 3pt;
+}
+
+.info_box {
+    padding: 5pt;
+}
+
+.yes_button, .no_button {
+    width: 20pt;
+    height: 10pt;
+}
+
+.yes_button {
+    background-color: black;
+    color: white;
+}
+
+.no_button {
+    background-color: gray;
+    color: black;
+}
+
+
+
+
+
+
+
+

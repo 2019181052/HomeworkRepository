@@ -5,38 +5,74 @@
         <link rel = “stylesheet” type="text/css" href = “main.css”>
     </head>
     <body>
-        <div>
+        <div class="header">
             <h1>Welcome to INTERNET PROGRAMMING SHOP</h3>
-            <a href='login.html'>로그인</a>
-            <h3>회원가입</h3>
         </div>
-        <div>
+        <div class="navigation">
+            <div style="float: left; margin-right: 8pt;">
+                <a href='login.html' style="text-decoration : none; color: black;"><h3>로그인</h3></a>
+            </div>
+            <div style="float: left; background-color: black; color: white;">
+                <h3>회원가입</h3>
+            </div>
+        </div>
+        <div class="info_box" style="clear:both">
             <h3>개인정보 (필수)</h3>
-            <form>
+            <form method = "get" action="">
                 <p>
-                    <label>이름 : <input type="text" name="name" placeholder="이름을 입력하세요" autofocus></label>
+                    <label>이름 : <input type="text" name="name" placeholder="이름을 입력하세요" autofocus required></label>
                 </p>
                 <p>
-                    <label>생일 : <input type="date" name="date"></label>
+                    <label>생일 : <input type="date" name="date" required></label>
                 </p>
                 <p>
                     <label>학년 : <input type="number" name="number" min="1" max="6" step="1" value="1"></label>
                 </p>
                 <p>
-                    <label>전화번호 : <input type="tel" name="tel" placeholder="###-####-####" pattern="\d{3}-\d{4}-\d{4}"></label>
+                    <label>전화번호 : <input type="tel" name="tel" placeholder="###-####-####" pattern="\d{3}-\d{4}-\d{4}" autocomplete="on"></label>
                 </p>
                 <p>
-                    <label>유저 아이디 : <input type="text" name="userid" placeholder="아이디를 입력하세요"></label>
+                    <label>유저 아이디 : <input type="text" name="userid" placeholder="아이디를 입력하세요" required></label>
                 </p>
                 <p>
-                    <label>비밀번호 : <input type="password" name="password" maxlength="10" placeholder="비밀번호를 입력하세요"></label>
+                    <label>비밀번호 : <input type="password" name="password" maxlength="10" placeholder="비밀번호를 입력하세요" required></label>
                 </p>
                 <p>
-                    <label>비밀번호 확인 : <input type="password" name="password" maxlength="10" placeholder="비밀번호 확인"></label>
+                    <label>비밀번호 확인 : <input type="password" name="password" maxlength="10" placeholder="비밀번호 확인" required></label>
                 </p>
                 <p>
-                    <button id="signup">Signup</button>
-                    <button id="cancel">Cancel</button>
+                    <strong>성별을 선택해주세요.</strong><br>
+                    <label>남자
+                        <input name="gender" type = "radio" value = "man" checked>
+                    </label>
+                    <label>여자
+                        <input name="gender" type = "radio" value = "woman">
+                    </label>
+                </p>
+                <p>
+                    <strong>관심 있는 카테고리를 선택해주세요. (복수 선택 가능)</strong><br>
+                    <label>패션
+                        <input name = thingsliked type = "checkbox" value = "fashion">
+                    </label>
+                    <label>화장품/미용
+                        <input name = thingsliked type = "checkbox" value = "cosmetics">
+                    </label>
+                    <label>가구/인테리어
+                        <input name = thingsliked type = "checkbox" value = "furniture">
+                    </label>
+                    <label>가전/디지털
+                        <input name = thingsliked type = "checkbox" value = "digital">
+                    </label>
+                    <label>스포츠/레저
+                        <input name = thingsliked type = "checkbox" value = "sports">
+                    </label>
+                    <label>건강/의료용품
+                        <input name = thingsliked type = "checkbox" value = "health">
+                    </label>
+                </p>
+                <p>
+                    <input class = yes_button type="submit", value="회원가입">
+                    <input class = no_button type="reset", value="취소">
                 </p>
             </form>
         </div>
