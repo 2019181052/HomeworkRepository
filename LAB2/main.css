@@ -2,26 +2,27 @@
     background-color: black;
     color: white;
     text-align: center;
-    border-bottom: 3pt;
-    border-color: gray;
 }
 
 .header h1 {
-    font-size: 20pt;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .navigation {
-    margin-bottom: 3pt;
+    margin-bottom: 3px;
 }
 
 .info_box {
-    padding: 5pt;
+    padding: 5px;
+    border: 3px;
+    border-color: black;
+    border-radius: 15px;
 }
 
 .yes_button, .no_button {
-    width: 20pt;
-    height: 10pt;
+    width: 20px;
+    height: 10px;
 }
 
 .yes_button {
