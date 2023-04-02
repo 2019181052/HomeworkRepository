@@ -1,28 +1,27 @@
-.header {
-    background-color: black;
-    color: white;
-    text-align: center;
+/* External style sheet */
+body {
+    background-color: beige
 }
 
-.header h1 {
-    font-size: 20px;
+body h1 {
+    font-size: 33px;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.navigation {
-    margin-bottom: 3px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .info_box {
+    background-color: white;
     padding: 5px;
-    border: 3px;
-    border-color: black;
     border-radius: 15px;
+    
 }
 
 .yes_button, .no_button {
-    width: 20px;
-    height: 10px;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
 }
 
 .yes_button {
@@ -34,11 +33,6 @@
     background-color: gray;
     color: black;
 }
-
-
-
-
-
 
 
 
