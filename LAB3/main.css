@@ -83,6 +83,8 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
+        margin: auto;
     }
 }
 
@@ -105,7 +107,6 @@ a {
     .goods_container_div {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         justify-content: space-around;
         margin: auto;
     }
@@ -168,13 +169,14 @@ a {
 }
 
 img {
-    width: 100px;
-    height: 120px;
+    width: 170px;
+    height: 200px;
 }
 
 .goods {
     position: relative;
     transition: transform 2s;
+    margin: 20px;
 }
 
 .goods p {
