@@ -1,0 +1,200 @@
+/* External style sheet */
+body {
+    background-color: beige;
+    max-width: 1000px;
+    margin: auto;
+}
+
+body h1 {
+    font-size: 33px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info_box {
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    clear: both;
+}
+
+.yes_button, .no_button {
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.yes_button {
+    background-color: black;
+    color: white;
+}
+
+.no_button {
+    background-color: gray;
+    color: black;
+}
+
+a {
+    text-decoration : none; 
+    color: black;
+}
+
+.moving_title {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    background-color: white;
+    width:100%;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.title_div {
+    background-color: black;
+    margin: auto
+}
+
+@media screen and (min-width: 801px){
+    .nav_div {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container_div {
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+    } 
+
+    .goods_container_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px){
+    .nav_div {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container_div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .goods_container_div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav_div {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container_div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: aqua;
+        justify-content: center;
+    } 
+
+    .goods_container_div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+}
+
+.main, .login, .signup {
+    margin: 10px;
+}
+
+.login, .signup {
+    color: gray;
+}
+
+.goods_div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.goods_title_div {
+    background-color:  black;
+    color: white;
+}
+
+.introduction_div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.introduction_title_div {
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 120px;
+}
+
+.goods {
+    position: relative;
+    transition: transform 2s;
+}
+
+.goods p {
+    position: absolute;
+    top: 0;
+    right: auto;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.goods:hover {
+    transform: scale(1.1); 
+}
+
+.goods:hover p {
+    opacity: 1;
+}
+
+
+
