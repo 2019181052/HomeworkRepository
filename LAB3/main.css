@@ -43,7 +43,7 @@ a {
 
 .moving_title {
     animation-name: slidein;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     background-color: white;
@@ -109,7 +109,6 @@ a {
         justify-content: space-around;
         margin: auto;
     }
-
 }
 
 
@@ -126,7 +125,6 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        background-color: aqua;
         justify-content: center;
     } 
 
