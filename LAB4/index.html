@@ -7,13 +7,13 @@
         async function rendering (category, order) {
             await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
             .then(function(response){
-                const json = response.json();
+                return response.json();
             })
-            .then(console.log(json))
-
-            let selected = category ? json.products[0].filter(product => product.category === category) : json
-            
-            console.log(selected);
+            .then(function(json) {
+                console.log(json);
+                let selected = category ? json.products[0].filter(product => product.category === category) : json
+                console.log(selected);
+            })
 
             if (order === '가격 높은 순') {
                 selected.sort((a, b)=> a.price - b.price);
@@ -21,7 +21,8 @@
                 selected.sort((a, b)=> b.price - a.price);
             }
 
-            const parent = document.getElementById('goods_container_div').innerHTML='';
+            const parent = document.getElementById('goods_container_div');
+            parent.innerHTML='';
             
             for (const product of selected) {
                 const div = document.createElement('div');
@@ -36,8 +37,8 @@
         };
 
         addEventListener("input", (event) => {
-            const category = documentgetElementById('category').value;
-            const order = documentgetElementById('order').value;
+            const category = document.getElementById('category').value;
+            const order = document.getElementById('order').value;
             rendering(category, order);
         });     
 
