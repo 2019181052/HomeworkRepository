@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <link rel = "stylesheet" type="text/css" href="main.css">
     <script>
-        document.addEventListener('DOMContentLoaded', function(){
+        function getProducts () {
             fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
             .then(function(response) {
                 return response.json();
             })
-            .then((products => {
-                console.log(products);
-            }));
-        })
+        }
+
+        getProducts().then((products => {
+            console.log(products);
+        }));
     </script>
 </head>
 <body>
