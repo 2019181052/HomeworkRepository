@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <!-- <script src="./getProducts.js"></script> -->
+    <div class="title_div">
+        <h1 class="moving_title">Welcome to INTERNET PROGRAMMING SHOP</h1>
+    </div>
+    <div class="nav_div">
+        <h3 class="main">메인페이지</h3>
+        <a href='login.html'><h3 class="login">로그인</h3></a>
+        <a href='signup.html'><h3 class="signup">회원가입</h3></a>
+    </div>
+    <div class="container_div">
+        <div class="goods_div">
+            <div class="goods_title_div">5월의 인기 상품</div>
+            <div>
+                <div class="filter">
+                    <p>
+                        <label>Choose a category: <br>
+                            <select name="category" class="category">
+                                <option selected>All</option>
+                                <option>가방</option>
+                                <option>바지</option>
+                                <option>가디건</option>
+                                <option>후드집업</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p><label>Enter search term:<br>
+                            <input type="text" name="search" placeholder="e.g. 가방" class="search" /></label>
+                    </p>
+                    <p>
+                        <label>Choose a sort: <br>
+                            <select name="order" class="order">
+                                <option selected>none</option>
+                                <option>가격 높은 순</option>
+                                <option>가격 낮은 순</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Filter results" class="result">
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="goods_container_div">
+                <div class="goods"> -->
+                    <!-- <img src="후드집업.png" alt="후드집업">
+                    <p>후드집업</p> -->
+                <!-- </div>
+                <div class="goods"> -->
+                    <!-- <img src="트레이닝바지.png" alt="트레이닝바지">
+                    <p>바지</p> -->
+                <!-- </div>
+                <div class="goods"> -->
+                    <!-- <img src="가디건.png" alt="가디건">
+                    <p>가디건</p> -->
+                <!-- </div>
+                <div class="goods"> -->
+                    <!-- <img src="가방.png" alt="가방">
+                    <p>가방</p> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- <div class="introduction_div">
+            <div class="introduction_title_div">소개</div>
+            <div class="introduction_container_div">4월의 인기 상품들입니다. 품질 보장합니다.</div>
+        </div> -->
+    </div>
+</body>
+</html>
