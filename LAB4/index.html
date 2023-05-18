@@ -5,9 +5,11 @@
     <link rel = "stylesheet" type="text/css" href="main.css">
     <script>
         async function rendering (category, order) {
-            const response = await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
-            const json = response.json();
-            console.log(json);
+            await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
+            .then(function(response){
+                const json = response.json();
+            })
+            .then(console.log(json))
 
             let selected = category ? json.products[0].filter(product => product.category === category) : json
             
@@ -20,8 +22,8 @@
             }
 
             const parent = document.getElementById('goods_container_div').innerHTML='';
-
-            selected.forEach((product) => {
+            
+            for (const product of selected) {
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
@@ -30,8 +32,7 @@
                 <p>${product.price}</p>
                 `;
                 parent.appendChild(div);
-            });
-
+            }
         };
 
         addEventListener("input", (event) => {
