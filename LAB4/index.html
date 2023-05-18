@@ -6,9 +6,10 @@
     <script>
         async function getProducts() {
             let response = await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
-            let json = await response.json() 
-            await console.log(json)
+            let json = await response.json()
+            await console.log(json);
         }
+        getProducts();
     </script>
 </head>
 <body>
