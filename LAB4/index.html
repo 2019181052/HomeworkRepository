@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" type="text/css" href="main.css">
+    <script>
+        document.addEventListener('DOMcontentLoaded', function(){
+            fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                console.log(json[0])
+            })
+        })
+    </script>
 </head>
 <body>
-    <script src="./getProducts.js"></script>
+    <!-- <script src="./getProducts.js"></script> -->
     <div class="title_div">
         <h1 class="moving_title">Welcome to INTERNET PROGRAMMING SHOP</h1>
     </div>
