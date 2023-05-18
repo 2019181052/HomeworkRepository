@@ -148,7 +148,7 @@ a {
 
 .goods_div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: white;
 }
 
@@ -194,4 +194,13 @@ img {
 
 .goods:hover p {
     opacity: 1;
+}
+
+.filter {
+    flex: 0.25;
+    background-color: aqua;
+}
+
+.sales {
+    flex: 2;
 }
