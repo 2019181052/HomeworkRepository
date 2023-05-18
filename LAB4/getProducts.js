@@ -1,7 +1,10 @@
-function getProducts() {
-    return fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
-    .then((response) => response.json())
-    .then((json) => json.products);
+
+
+function getProducts () {
+    fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
+    .then(function(response) {
+        return response.json();
+    })
 }
 
 /* function displayProducts(products) {
