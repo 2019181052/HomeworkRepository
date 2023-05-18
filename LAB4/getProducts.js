@@ -5,7 +5,7 @@ function getProducts() {
 }
 
 /* function displayProducts(products) {
-
+    
 } */
 
 getProducts().then((products => {
