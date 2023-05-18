@@ -31,7 +31,7 @@
 
         };
 
-        document.getElementById('submit_form').addEventListener("submit", function(){
+        document.getElementById('form').addEventListener("submit", function(){
             const category = documentgetElementById('category').value;
             const order = documentgetElementById('order').value;
             rendering(category, order);
@@ -77,7 +77,7 @@
                         </label>
                     </p>
                     <p>
-                        <form id="submit_form">
+                        <form id="_form">
                             <input type="submit" value="Filter results" id="result">
                         </form>
                      </p>
