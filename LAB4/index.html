@@ -9,7 +9,7 @@
             const json = response.json();
             console.log(json);
 
-            let selected = category && (category != 'All') ? json.products[0].filter(product => product.category === category) : json
+            let selected = category ? json.products[0].filter(product => product.category === category) : json
             
             console.log(selected);
 
