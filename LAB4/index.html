@@ -9,9 +9,9 @@
             .then(function(response) {
                 return response.json();
             })
-            .then(function(json) {
-                console.log(json)
-            })
+            .then((products => {
+                console.log(products);
+            }));
         })
     </script>
 </head>

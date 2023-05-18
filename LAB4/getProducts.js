@@ -7,5 +7,4 @@ function getProducts () {
 
 getProducts().then((products => {
     console.log(products);
-    //displayProducts(products)
 }));
