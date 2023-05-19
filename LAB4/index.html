@@ -3,57 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-    <div class="title_div">
-        <h1 class="moving_title">Welcome to INTERNET PROGRAMMING SHOP</h1>
-    </div>
-    <div class="nav_div">
-        <h3 class="main">메인페이지</h3>
-        <a href='login.html'><h3 class="login">로그인</h3></a>
-        <a href='signup.html'><h3 class="signup">회원가입</h3></a>
-    </div>
-    <div class="container_div">
-        <div class="goods_title_div">5월의 인기 상품</div>
-        <div class="goods_div">
-            <div class="filter">
-                    <p>
-                        <label>Choose a category: <br>
-                            <select id="category" class="category" name="category" onchange = "category()">
-                                <option selected value="All">All</option>
-                                <option value="가방">가방</option>
-                                <option value="바지">바지</option>
-                                <option value="가디건">가디건</option>
-                                <option value="후드집업">후드집업</option>
-                            </select>
-                        </label>
-                    </p>
-                    <p><label>Enter search term:<br>
-                            <input type="text" name="search" placeholder="e.g. 가방" class="search" id="search" oninput = "search()"/></label>
-                    </p>
-                    <p>
-                        <label>Choose a sort: <br>
-                            <select id="order" class="order" name="order" onchange = "order()">
-                                <option selected value="none">none</option>
-                                <option value="가격 높은 순">가격 높은 순</option>
-                                <option value="가격 낮은 순">가격 낮은 순</option>
-                            </select>
-                        </label>
-                    </p>
-                    <p>
-                        <button type="submit" onclick="submit()">Filter results</button>
-                    </p>
-            </div>
-            <div class="sales">
-                <div id="goods_container_div" class="goods_container_div">
-                    <!-- <div class="goods">
-                        <img src="후드집업.png" alt="후드집업">
-                        <p>후드집업</p>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
         async function getProducts() {
             let response = await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
@@ -69,6 +18,8 @@
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
             }
+            document.getElementById('category').value = "All";
+            document.getElementById('order').value = "none";
         }
         
         getProducts();
@@ -189,5 +140,56 @@
             }
         }
     </script>
+</head>
+<body>
+    <div class="title_div">
+        <h1 class="moving_title">Welcome to INTERNET PROGRAMMING SHOP</h1>
+    </div>
+    <div class="nav_div">
+        <h3 class="main">메인페이지</h3>
+        <a href='login.html'><h3 class="login">로그인</h3></a>
+        <a href='signup.html'><h3 class="signup">회원가입</h3></a>
+    </div>
+    <div class="container_div">
+        <div class="goods_title_div">5월의 인기 상품</div>
+        <div class="goods_div">
+            <div class="filter">
+                    <p>
+                        <label>Choose a category: <br>
+                            <select id="category" class="category" name="category" onchange = "category()">
+                                <option selected value="All">All</option>
+                                <option value="가방">가방</option>
+                                <option value="바지">바지</option>
+                                <option value="가디건">가디건</option>
+                                <option value="후드집업">후드집업</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p><label>Enter search term:<br>
+                            <input type="text" name="search" placeholder="e.g. 가방" class="search" id="search" oninput = "search()"/></label>
+                    </p>
+                    <p>
+                        <label>Choose a sort: <br>
+                            <select id="order" class="order" name="order" onchange = "order()">
+                                <option selected value="none">none</option>
+                                <option value="가격 높은 순">가격 높은 순</option>
+                                <option value="가격 낮은 순">가격 낮은 순</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit" onclick="submit()">Filter results</button>
+                    </p>
+            </div>
+            <div class="sales">
+                <div id="goods_container_div" class="goods_container_div">
+                    <!-- <div class="goods">
+                        <img src="후드집업.png" alt="후드집업">
+                        <p>후드집업</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
