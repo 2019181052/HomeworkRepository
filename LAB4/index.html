@@ -23,21 +23,23 @@
                 document.getElementById('goods_container_div').appendChild(div)
             }
         }
+        
         getProducts();
 
-        addEventListener("input", (event) => {
-            const category = document.getElementById('category').value;
-            const order = document.getElementById('order').value;
-            console.log(category)
-            console.log(order)
-        });
-
-        addEventListener("submit", function(event) {
+        document.querySelector(".category").addEventListener("change", (event) => {
             let category = document.getElementById('category').value;
-            let order = document.getElementById('order').value;
             console.log(category);
+        })
+        document.querySelector(".order").addEventListener("change", (event) => {
+            let order = document.getElementById('order').value;
             console.log(order);
         })
+
+        document.querySelector("input").addEventListener("change", (event) => {
+            let search = document.getElementById('search').value;
+            console.log(search);
+        });
+
     </script>
 </head>
 <body>
@@ -55,7 +57,7 @@
             <div class="filter">
                     <p>
                         <label>Choose a category: <br>
-                            <select id="category">
+                            <select id="category" class="category" name="category">
                                 <option selected>All</option>
                                 <option value="가방">가방</option>
                                 <option value="바지">바지</option>
@@ -65,11 +67,11 @@
                         </label>
                     </p>
                     <p><label>Enter search term:<br>
-                            <input type="text" name="search" placeholder="e.g. 가방" class="search" /></label>
+                            <input type="text" name="search" placeholder="e.g. 가방" class="search" id="search"/></label>
                     </p>
                     <p>
                         <label>Choose a sort: <br>
-                            <select id="order">
+                            <select id="order" class="order" name="order">
                                 <option selected>none</option>
                                 <option value="가격 높은 순">가격 높은 순</option>
                                 <option value="가격 낮은 순">가격 낮은 순</option>
