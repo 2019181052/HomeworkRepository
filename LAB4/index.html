@@ -28,32 +28,23 @@
 
         function category() {
             let category = document.querySelector(".category")
-
-            if (category) {
             category.addEventListener("change", (event) => {
             category_value = document.getElementById('category').value;
             console.log(category_value);
         })
         }
-        }
 
         function order() {
             let order = document.querySelector(".order")
-
-            if (order) {
-                order.addEventListener("change", (event) => {
-                order_value = document.getElementById('order').value;
-                console.log(order_value);
+            order.addEventListener("change", (event) => {
+            order_value = document.getElementById('order').value;
+            console.log(order_value);
         })
-        }
         }
 
         function search() {
             let search = document.querySelector("input")
-
-            if (search) {
-                search.addEventListener("change", updateValue);
-            }
+            search.addEventListener("change", updateValue);
         }
 
         function updateValue(e) {
@@ -89,7 +80,7 @@
                     array.push({...product});
                 }
                 }
-                
+
                 let search = document.querySelector("input")
                 search.value = null;
 
