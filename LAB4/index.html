@@ -26,20 +26,28 @@
         
         getProducts();
 
-        document.querySelector(".category").addEventListener("change", (event) => {
-            let category = document.getElementById('category').value;
-            console.log(category);
-        })
-        document.querySelector(".order").addEventListener("change", (event) => {
-            let order = document.getElementById('order').value;
-            console.log(order);
+        let category = document.querySelector(".category")
+
+        category.addEventListener("change", (event) => {
+            let category_value = document.getElementById('category').value;
+            console.log(category_value);
         })
 
-        document.querySelector("input").addEventListener("change", (event) => {
-            let search = document.getElementById('search').value;
-            console.log(search);
-        });
+        let order = document.querySelector(".order")
 
+        order.addEventListener("change", (event) => {
+            let order_value = document.getElementById('order').value;
+            console.log(order_value);
+        })
+
+        let search = document.querySelector("input")
+
+        search.addEventListener("change", updateValue);
+
+        function updateValue(e) {
+            let search_value = e.target.value;
+            console.log(search_value);
+        }
     </script>
 </head>
 <body>
