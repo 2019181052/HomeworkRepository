@@ -48,15 +48,26 @@
             let search = document.querySelector("input")
 
             if (search) {
-                search.addEventListener("change", (event) => {
-                let search_value = document.getElementById('search').value;
-                console.log(search_value);
-            });
+                search.addEventListener("change", updateValue);
             }
+        }
+
+        function updateValue(e) {
+            let search_value = e.target.value;
+            console.log(search_value);
         }
 
         function submit() {
             console.log(category_value, search_value, order_value);
+            for (let product of json.products) {
+                const div = document.createElement('div');
+                div.classList.add('goods');
+                div.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <p>${product.price}</p>
+                `;
+                document.getElementById('goods_container_div').appendChild(div)
+            }
         }
     </script>
 </head>
