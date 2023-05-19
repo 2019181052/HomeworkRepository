@@ -86,9 +86,9 @@
             if (search_value) {
                 console.log('if문')
                 for (let product of json.products) {
-                if (product[name] === search_value) {
                     console.log(product[name])
                     console.log(search_value)
+                if (product[name] === search_value) {
                     array.push({...product});
                 }
                 }
