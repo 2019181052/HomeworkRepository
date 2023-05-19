@@ -26,6 +26,8 @@
         let search_value;
         let order_value;
 
+        document.querySelector('select').onchange();
+
         function category() {
             let category = document.querySelector(".category")
             category.addEventListener("change", (event) => {
@@ -54,15 +56,6 @@
 
         function submit() {
             console.log(category_value, search_value, order_value);
-            /* for (let product of json.products) {
-                const div = document.createElement('div');
-                div.classList.add('goods');
-                div.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <p>${product.price}</p>
-                `;
-                document.getElementById('goods_container_div').appendChild(div)
-            } */
             displayProducts(category_value, search_value, order_value);
         }
 
@@ -166,7 +159,7 @@
             <div class="filter">
                     <p>
                         <label>Choose a category: <br>
-                            <select id="category" class="category" name="category" onchange = "category(this.value)">
+                            <select id="category" class="category" name="category" onchange = "category()">
                                 <option selected value="All">All</option>
                                 <option value="가방">가방</option>
                                 <option value="바지">바지</option>
