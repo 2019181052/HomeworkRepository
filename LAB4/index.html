@@ -26,28 +26,34 @@
         
         getProducts();
 
-        let category = document.querySelector(".category")
-        
-        if (category) {
+        function category() {
+            let category = document.querySelector(".category")
+
+            if (category) {
             category.addEventListener("change", (event) => {
             let category_value = document.getElementById('category').value;
             console.log(category_value);
         })
         }
-
-        let order = document.querySelector(".order")
-
-        if (order) {
-            order.addEventListener("change", (event) => {
-            let order_value = document.getElementById('order').value;
-            console.log(order_value);
-        })
         }
 
-        let search = document.querySelector("input")
+        function order() {
+            let order = document.querySelector(".order")
 
-        if (search) {
-            search.addEventListener("change", updateValue);
+            if (order) {
+                order.addEventListener("change", (event) => {
+                let order_value = document.getElementById('order').value;
+                console.log(order_value);
+        })
+        }
+        }
+
+        function search() {
+            let search = document.querySelector("input")
+
+            if (search) {
+                search.addEventListener("change", updateValue);
+            }
         }
 
         function updateValue(e) {
@@ -71,7 +77,7 @@
             <div class="filter">
                     <p>
                         <label>Choose a category: <br>
-                            <select id="category" class="category" name="category">
+                            <select id="category" class="category" name="category" onchange = "category()">
                                 <option selected>All</option>
                                 <option value="가방">가방</option>
                                 <option value="바지">바지</option>
@@ -81,11 +87,11 @@
                         </label>
                     </p>
                     <p><label>Enter search term:<br>
-                            <input type="text" name="search" placeholder="e.g. 가방" class="search" id="search"/></label>
+                            <input type="text" name="search" placeholder="e.g. 가방" class="search" id="search" onchange = "search()"/></label>
                     </p>
                     <p>
                         <label>Choose a sort: <br>
-                            <select id="order" class="order" name="order">
+                            <select id="order" class="order" name="order" onchange = "order()">
                                 <option selected>none</option>
                                 <option value="가격 높은 순">가격 높은 순</option>
                                 <option value="가격 낮은 순">가격 낮은 순</option>
