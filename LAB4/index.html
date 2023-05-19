@@ -22,12 +22,16 @@
         
         getProducts();
 
+        let category_value;
+        let search_value;
+        let order_value;
+
         function category() {
             let category = document.querySelector(".category")
 
             if (category) {
             category.addEventListener("change", (event) => {
-            let category_value = document.getElementById('category').value;
+            category_value = document.getElementById('category').value;
             console.log(category_value);
         })
         }
@@ -38,7 +42,7 @@
 
             if (order) {
                 order.addEventListener("change", (event) => {
-                let order_value = document.getElementById('order').value;
+                order_value = document.getElementById('order').value;
                 console.log(order_value);
         })
         }
@@ -53,13 +57,13 @@
         }
 
         function updateValue(e) {
-            let search_value = e.target.value;
+            search_value = e.target.value;
             console.log(search_value);
         }
 
         function submit() {
             console.log(category_value, search_value, order_value);
-            for (let product of json.products) {
+            /* for (let product of json.products) {
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
@@ -67,7 +71,7 @@
                 <p>${product.price}</p>
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
-            }
+            } */
         }
     </script>
 </head>
