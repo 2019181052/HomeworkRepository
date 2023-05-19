@@ -27,22 +27,28 @@
         getProducts();
 
         let category = document.querySelector(".category")
-
-        category.addEventListener("change", (event) => {
+        
+        if (category) {
+            category.addEventListener("change", (event) => {
             let category_value = document.getElementById('category').value;
             console.log(category_value);
         })
+        }
 
         let order = document.querySelector(".order")
 
-        order.addEventListener("change", (event) => {
+        if (order) {
+            order.addEventListener("change", (event) => {
             let order_value = document.getElementById('order').value;
             console.log(order_value);
         })
+        }
 
         let search = document.querySelector("input")
 
-        search.addEventListener("change", updateValue);
+        if (search) {
+            search.addEventListener("change", updateValue);
+        }
 
         function updateValue(e) {
             let search_value = e.target.value;
