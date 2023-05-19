@@ -72,6 +72,42 @@
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
             } */
+            displayProducts(category_value, search_value, order_value);
+        }
+
+        function displayProducts(category_value, search_value, order_value) {
+
+            document.getElementById('goods_container_div').innerText = '';
+
+            let array = [];
+
+            if (category_value) {
+                for (let product of json.products) {
+                if (product[category] === category_value) {
+                    array.push({...product});
+                }
+                }
+                if (order_value && order_value === "가격 낮은 순") {
+                    array.sort(function(a,b) {
+	                return parseFloat(a.price) - parseFloat(b.price);
+                });
+                }
+                if (order_value && order_value === "가격 높은 순") {
+                    array.sort(function(a,b) {
+	                return parseFloat(b.price) - parseFloat(a.price);
+                });
+                }
+
+                for (let product of array) {
+                const div = document.createElement('div');
+                div.classList.add('goods');
+                div.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <p>${product.price}</p>
+                `;
+                document.getElementById('goods_container_div').appendChild(div)
+            }
+            }
         }
     </script>
 </head>
