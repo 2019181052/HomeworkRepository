@@ -132,6 +132,7 @@
                 for (let product of json.products) {
                   array.push({...product});
                 }
+                console.log(array)
 
                 if (order_value && order_value !== "none" && order_value === "가격 낮은 순") {
                     array.sort(function(a,b) {
