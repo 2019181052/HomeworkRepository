@@ -2,73 +2,73 @@
   "products": [
     {
        "name": "백팩",
-       "catogory": "가방",
+       "category": "가방",
        "price": "10,000원",
        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQeNs6n4l1WZiW8syyBdD3f6hnqH508t8ot_pO1nXTIR9VmakUau35KyLHsU5YOBQgaCk&usqp=CAU"
     },
     {
         "name": "크로스백",
-        "catogory": "가방",
+        "category": "가방",
         "price": "20,000원",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrB_peDgGmjeneCg7Kqp8RmJ4qTnqAbFh3uQ&usqp=CAU"
     },
     {
         "name": "핸드백",
-        "catogory": "가방",
+        "category": "가방",
         "price": "30,000원",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6AoKZFFVwRjuWXHXF5fV-K2lw4OOJB60MBQ&usqp=CAU"
     },
     {
         "name": "면바지",
-        "catogory": "바지",
+        "category": "바지",
         "price": "10,000원",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lvR63qDCO_-_mlvQJahd5V1W-yt8BlNWKQ&usqp=CAU"
      },
      {
          "name": "청바지",
-         "catogory": "바지",
+         "category": "바지",
          "price": "20,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZR4iW7YpwzIZqGItCpxCX6LtqvcN0CmBLA&usqp=CAU"
      },
      {
          "name": "트레이닝바지",
-         "catogory": "바지",
+         "category": "바지",
          "price": "30,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCxLlBfpubBgjHuZWQa8sCl3KXblp_n61EA&usqp=CAU"
      },
      {
         "name": "갈색가디건",
-        "catogory": "가디건",
+        "category": "가디건",
         "price": "10,000원",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-jACH3Qukpn-IAgPnYrMNjQf7bGIFJIBNw&usqp=CAU"
      },
      {
          "name": "남색가디건",
-         "catogory": "가디건",
+         "category": "가디건",
          "price": "20,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsNrr58omyA7qx6aNSK9QSZdc5abaUzIMjQ&usqp=CAU"
      },
      {
          "name": "회색가디건",
-         "catogory": "가디건",
+         "category": "가디건",
          "price": "30,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIhVmVqldXLCah39zevUkJCbNKyKGGrcDlg&usqp=CAU"
      },
      {
         "name": "남색후드집업",
-        "catogory": "후드집업",
+        "category": "후드집업",
         "price": "10,000원",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp45pH68MBmjwCk4SOhR9sgXD8QGBdb7aBNg&usqp=CAU"
      },
      {
          "name": "회색후드집업",
-         "catogory": "후드집업",
+         "category": "후드집업",
          "price": "20,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEjuTtnscqcRsKnx5DmWP26M0w-lrS4Tpqw&usqp=CAU"
      },
      {
          "name": "흰색후드집업",
-         "catogory": "후드집업",
+         "category": "후드집업",
          "price": "30,000원",
          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jCg-g8-Jf9yyj_wb377M3_wLV-2wkuAl3Q&usqp=CAU"
      }
