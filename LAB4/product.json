@@ -61,10 +61,10 @@
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5qHSnFBQd87TJTVkPtASBhhU74uIYipZMB1fs0vOyofJ2ayMJsJ-oeCkeVz4TM_ggd0&usqp=CAU"
     },
     {
-        "name": "파란색바지",
+        "name": "초록색바지",
         "category": "바지",
         "price": "50,000원",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCxLlBfpubBgjHuZWQa8sCl3KXblp_n61EA&usqp=CAU"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyAPavPpLcnhg_pWM3bWkxHAg1TSupKuXPxnP1clc0SHgBor8ce4dhq8CGupnEL_PA1v8&usqp=CAU"
     },
     {
         "name": "노란색바지",
@@ -133,10 +133,10 @@
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Ufg3a9DsdnTgpWzIrfpZwjowtJpDjWd1mQ&usqp=CAU"
     },
     {
-        "name": "초록색후드집업",
+        "name": "노란색후드집업",
         "category": "후드집업",
         "price": "50,000원",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyUIH54rBaT-UNyxfYdGdHx58NP3PQjJPTA&usqp=CAU"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7jD2q3dsg5uGt9bs6bTftLV-3vFJesIUECg&usqp=CAU"
     },{
         "name": "빨간색후드집업",
         "category": "후드집업",
