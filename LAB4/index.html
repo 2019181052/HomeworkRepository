@@ -18,9 +18,9 @@
             let array = [];
 
             for (let product of json.products) {
-                console.log(product.id);
-                console.log(start);
-                console.log(start);
+                console.log("product.id", product.id);
+                console.log("start:", start);
+                console.log("end:", end);
                 if (product.id === start) {
                     array.push({...product});
                 }
@@ -49,7 +49,7 @@
         
         let counter = 1;
 
-        document.addEventListener('DomContentLoaded', getProducts);
+        getProducts();
 
         window.onscroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
