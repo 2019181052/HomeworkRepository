@@ -48,13 +48,11 @@
             let search = document.querySelector("input")
 
             if (search) {
-                search.addEventListener("change", updateValue);
+                search.addEventListener("change", (event) => {
+                let search_value = document.getElementById('search').value;
+                console.log(search_value);
+            });
             }
-        }
-
-        function updateValue(e) {
-            let search_value = e.target.value;
-            console.log(search_value);
         }
 
         function submit() {
@@ -77,7 +75,7 @@
             <div class="filter">
                     <p>
                         <label>Choose a category: <br>
-                            <select id="category" class="category" name="category" onchange = "category()">
+                            <select id="category" class="category" name="category" onchange = "category(this.value)">
                                 <option selected>All</option>
                                 <option value="가방">가방</option>
                                 <option value="바지">바지</option>
