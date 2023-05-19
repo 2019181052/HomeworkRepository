@@ -104,17 +104,31 @@
 
             if (search_value && search_value !== "") {
                 for (let product of json.products) {
-                if (product.name === search_value) {
+                if (product.category === search_value) {
                     array.push({...product});
                 }
                 }
+
+                if (order_value && order_value !== "none" && order_value === "가격 낮은 순") {
+                    array.sort(function(a,b) {
+	                return parseFloat(a.price) - parseFloat(b.price);
+                });
+                }
+                if (order_value && order_value !== "none" && order_value === "가격 높은 순") {
+                    array.sort(function(a,b) {
+	                return parseFloat(b.price) - parseFloat(a.price);
+                });
+                }
+
+                for (let product of array) {
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
-                <img src="${array[0].image}" alt="${array[0].name}">
-                <p>${array[0].price}<br/>${array[0].name}</p>
+                <img src="${product.image}" alt="${product.name}">
+                <p>${product.price}<br/>${product.name}</p>
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
+                }
             }
             else if (category_value && category_value !== "All" ) {
                 console.log('else if문')
