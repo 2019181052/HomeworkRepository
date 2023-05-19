@@ -84,11 +84,18 @@
             let array = [];
 
             if (search_value) {
+                console.log('if문')
                 for (let product of json.products) {
                 if (product[name] === search_value) {
                     array.push({...product});
                 }
                 }
+                console.log(array)
+                console.log(array[0])
+                console.log(array[0].image)
+                console.log(array[0].name)
+                console.log(array[0].price)
+                
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
@@ -97,7 +104,7 @@
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
             }
-            else if (category_value && category_value !== "All" ) {
+            /* else if (category_value && category_value !== "All" ) {
                 for (let product of json.products) {
                 if (product[category] === category_value) {
                     array.push({...product});
@@ -123,8 +130,8 @@
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
                 }
-            }
-            else {
+            } */
+            /* else {
                 for (let product of json.products) {
                   array.push({...product});
                 }
@@ -149,7 +156,7 @@
                 `;
                 document.getElementById('goods_container_div').appendChild(div)
                 }
-            }
+            } */
         }
     </script>
 </head>
