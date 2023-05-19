@@ -87,6 +87,8 @@
                 console.log('if문')
                 for (let product of json.products) {
                 if (product[name] === search_value) {
+                    console.log(product[name])
+                    console.log(search_value)
                     array.push({...product});
                 }
                 }
@@ -95,7 +97,7 @@
                 console.log(array[0].image)
                 console.log(array[0].name)
                 console.log(array[0].price)
-                
+
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
