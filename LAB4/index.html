@@ -11,13 +11,14 @@
 
             document.getElementById('goods_container_div').innerText = '';
 
-            if (counter === 3) {
-                counter = 1
-            }
-
             let start = counter;
             let end = start + 1;
             counter = end + 1;
+
+            if (end === 4) {
+                end = 3;
+                counter = 1;
+            }
 
             let array = [];
 
