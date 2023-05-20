@@ -5,7 +5,6 @@
     <link rel = "stylesheet" type="text/css" href="main.css">
     <script>
         let num = 1;
-        //let notFirst = 1;
 
         async function getProducts() {
             let response = await fetch("https://2019181052.github.io/HomeworkRepository/LAB4/product.json")
@@ -156,7 +155,6 @@
                 }
 
                 for (let product of array) {
-                    //if (product.id <= notFirst) {
                         const div = document.createElement('div');
                         div.classList.add('goods');
                         div.innerHTML = `
@@ -164,9 +162,7 @@
                         <p>${product.price}<br/>${product.name}</p>
                         `;
                         document.getElementById('goods_container_div').appendChild(div)
-                    //}
                 }
-                //notFirst += 1;
             }
         }
     </script>
