@@ -9,9 +9,9 @@
             let json = await response.json()
             await console.log(json.products);
 
-            document.getElementById('goods_container_div').innerText = '';
+            //document.getElementById('goods_container_div').innerText = '';
 
-            let start = counter;
+            /* let start = counter;
             let end = start + 1;
             counter = end + 1;
 
@@ -31,9 +31,9 @@
                 }
             }
             
-            console.log(array)
+            console.log(array) */
 
-            for (let product of array) {
+            for (let product of json.products) {
                 const div = document.createElement('div');
                 div.classList.add('goods');
                 div.innerHTML = `
@@ -49,15 +49,15 @@
             order();
         }
         
-        let counter = 1;
+        //let counter = 1;
 
         getProducts();
 
-        window.onscroll = () => {
+        /* window.onscroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
                 getProducts();
             }
-        }
+        } */
 
         let category_value;
         let search_value;
