@@ -49,10 +49,6 @@
 
             num += 1;
 
-            if (num >= 3) {
-                num = 1;
-            }
-
             document.getElementById('category').value = "All";
             category();
             document.getElementById('order').value = "none";
@@ -70,7 +66,7 @@
         } */
 
         document.addEventListener('scroll', () => {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            if ((num < 3) && (window.innerHeight + window.scrollY >= document.body.offsetHeight)) {
                 getProducts();
             }
         })
